@@ -15,7 +15,7 @@ def cadastrar(login, senha):
         elif senha != "":
             login_bd = login
             senha_bd = senha
-            logging.info(f'Cadastro do usuário {login} realizado com SUCESSO!')
+            logging.info("Cadastro do usuário %s realizado com SUCESSO!", login)
             return True
         else:
             raise AssertionError()
