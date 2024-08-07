@@ -9,6 +9,7 @@ def sub(a,b):
     return a-b
 
 def mult(a,b):
+    "Função que calcula a multiplicação de dois números"
     aux = 0
     for _ in range(b):
         aux = soma(aux,a)
