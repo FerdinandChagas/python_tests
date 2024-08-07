@@ -20,6 +20,6 @@ def div(a,b):
     except ZeroDivisionError:
         logging.warning("Não pode dividir por 0.")
         aux = div(a,1)                              ## BLOCO B
-        logging.debug(f'{a} dividido por {b+1} = {aux}')
-    except Exception:
+        logging.debug("%d dividido por %d = %d", a, b+1, aux)
+    except TypeError:
         logging.error("Tente novamente mais tarde.")
