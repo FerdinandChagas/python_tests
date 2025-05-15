@@ -10,7 +10,7 @@ def test_cadastrar():
 
 def test_autenticar():
     assert autenticar("","") == False
-    assert autenticar("usuario01", "senha123") == True
+    assert autenticar("usuario02", "senha123") == True
     assert autenticar("usuario01", "senha_nova") == False
 
     
